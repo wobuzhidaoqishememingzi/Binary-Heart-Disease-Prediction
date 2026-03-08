@@ -3,6 +3,7 @@ Test Accuracy : 0.8913
 Test Precision: 0.9020
 Test Recall   : 0.9020
 Test F1       : 0.9020
+Test AUC      : 0.9235
 
 --- classification_report ---
               precision    recall  f1-score   support
