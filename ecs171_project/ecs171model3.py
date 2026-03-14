@@ -23,7 +23,6 @@ from sklearn.metrics import (
     accuracy_score, precision_score, recall_score, f1_score
 )
 
-# ✅ IMPORTANT: move dataclass to a real module so pickle won't bind to __main__
 from ecs171_project.preprocess_artifacts import PreprocessArtifacts
 
 # 0) Paths / Constants
@@ -363,7 +362,7 @@ def main():
     print("\n[2/2] Running Model 3 (Random Forest) + saving model.pkl ...")
     run_model3(df_processed, str(OUT_DIR))
 
-    print("\n✅ ALL DONE.")
+    print("ALL DONE.")
     print("Outputs saved to:", OUT_DIR)
     print(" - metrics.txt")
     print(" - confusion_matrix.txt")
