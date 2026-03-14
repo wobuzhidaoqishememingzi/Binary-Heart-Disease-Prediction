@@ -335,7 +335,7 @@ def run_model3(df_processed: pd.DataFrame, out_dir: str):
         {"best_params": best_params, "best_cv_f1": best_score}
     )
 
-    # ✅ Save the actual trained model for Flask
+    # Save the actual trained model for Flask
     dump_pickle(out_dir / "model.pkl", best_model)
 
     # feature importance
